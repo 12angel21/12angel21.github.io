@@ -2,21 +2,21 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Ángel | Portfolio</title>
+  <title>Ángel Barroso | Portfolio</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
-  <h1>Ángel</h1>
-  <p>Estudiante de Ingeniería Informática | Unity & IA</p>
+  <h1>Ángel Barroso</h1>
+  <p>Game Developer | Computer Engineering Student | Unity</p>
 </header>
 
 <section>
   <h2>Sobre mí</h2>
   <p>
-    Soy estudiante de Ingeniería Informática con interés en el desarrollo
-    de videojuegos en Unity y la Inteligencia Artificial aplicada al NLP.
+    Soy Ingeniero Informático y desarrollador de videojuegos en Unity, con especial
+    interés en Inteligencia Artificial y Procesamiento del Lenguaje Natural.
   </p>
 </section>
 
@@ -30,16 +30,69 @@
   </div>
 
   <div class="project">
-    <h3>Juego en Unity con IA</h3>
-    <p>Prototipo con FSM y comportamiento de enemigos.</p>
-    <a href="https://github.com/12angel21" target="_blank">Ver en GitHub</a>
-  </div>
+    <h3>TFG – Aplicación móvil de detección y clasificación de tweets</h3>
 
+    <p>
+      Desarrollo de una aplicación móvil Android capaz de detectar automáticamente
+      contenido sexista en textos mediante un modelo de lenguaje generativo entrenado
+      específicamente para esta tarea.
+    </p>
+
+    <p>
+      La aplicación permite introducir un texto (por ejemplo, un tweet o comentario)
+      y obtener como resultado si el contenido es sexista o no sexista. En caso afirmativo,
+      también clasifica el tipo de sexismo: directo, reportado o juzgador.
+    </p>
+
+    <a href="https://huggingface.co" target="_blank">Ver modelo en Hugging Face</a><br>
+    <a href="#">Descargar aplicación móvil</a>
+
+    <div class="project-details">
+      <h4>🧠 Fundamento del sistema</h4>
+
+      <p>
+        La aplicación se basa en un modelo de Inteligencia Artificial entrenado durante
+        el Trabajo de Fin de Grado, utilizando técnicas avanzadas de Procesamiento del
+        Lenguaje Natural (PLN).
+      </p>
+
+      <h5>Modelo utilizado</h5>
+      <ul>
+        <li><strong>Arquitectura:</strong> FLAN-T5 (modelo generativo)</li>
+        <li><strong>Tipo de tarea:</strong> Clasificación binaria (YES / NO)</li>
+        <li><strong>Idioma:</strong> Español</li>
+        <li><strong>Dataset:</strong> EXIST 2025</li>
+      </ul>
+
+      <h5>Técnicas aplicadas</h5>
+      <ul>
+        <li>Limpieza y normalización de texto</li>
+        <li>Prompting en español</li>
+        <li>Data augmentation mediante <em>back-translation</em></li>
+      </ul>
+
+      <h5>Resultados</h5>
+      <ul>
+        <li><strong>Accuracy aproximada:</strong> 89%</li>
+      </ul>
+
+      <p class="note">
+        📌 A diferencia de los clasificadores tradicionales, el modelo genera directamente
+        la respuesta textual (<strong>YES</strong> o <strong>NO</strong>), lo que simplifica
+        la interpretación del resultado.
+      </p>
+    </div>
+  </div>
 </section>
 
 <section>
   <h2>Contacto</h2>
-  <p>GitHub: <a href="https://github.com/12angel21">github.com/12angel21</a></p>
+  <p>
+    GitHub:
+    <a href="https://github.com/12angel21" target="_blank">
+      github.com/12angel21
+    </a>
+  </p>
 </section>
 
 </body>
