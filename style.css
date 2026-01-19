@@ -134,3 +134,30 @@ a {
     background: #000;
   }
 }
+
+.experience .company {
+  display: block;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.experience .date {
+  display: block;
+  font-size: 0.9em;
+  opacity: 0.7;
+  margin-bottom: 15px;
+}
+
+.tech-tags {
+  margin-top: 15px;
+}
+
+.tech-tags span {
+  display: inline-block;
+  background: rgba(0, 0, 0, 0.08);
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.85em;
+  margin-right: 8px;
+  margin-bottom: 8px;
+}
