@@ -65,6 +65,19 @@ body::before {
     0 0 20px rgba(0, 255, 255, 0.5);
 }
 
+.hero-about {
+  max-width: 900px;
+  margin: -120px auto 80px auto;
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.92);
+  color: #222;
+  border-radius: 20px;
+  text-align: center;
+  position: relative;
+  z-index: 3;
+  box-shadow: 0 30px 80px rgba(0,0,0,0.4);
+}
+
 .hero p {
   font-family: 'Orbitron', sans-serif;
   font-size: 1.2rem;
