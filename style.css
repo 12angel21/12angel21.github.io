@@ -1,10 +1,11 @@
-
+/* RESET BÁSICO */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   color: #eee;
 }
 
+/* VIDEO DE FONDO */
 #bg-video {
   position: fixed;
   inset: 0;
@@ -22,6 +23,7 @@ body::before {
   z-index: -2;
 }
 
+/* HERO */
 .hero {
   height: 100vh;
   display: flex;
@@ -51,7 +53,6 @@ body::before {
 .hero h1 {
   font-family: 'Orbitron', sans-serif;
   font-size: 4rem;
-  letter-spacing: 2px;
   margin-bottom: 10px;
   text-shadow:
     0 0 10px rgba(0, 255, 255, 0.8),
@@ -64,6 +65,7 @@ body::before {
   opacity: 0.85;
 }
 
+/* SECCIONES */
 section {
   background: rgba(255, 255, 255, 0.95);
   color: #333;
@@ -73,6 +75,7 @@ section {
   border-radius: 12px;
 }
 
+/* PROYECTOS */
 .project {
   background: white;
   padding: 20px;
@@ -80,25 +83,13 @@ section {
   border-radius: 6px;
 }
 
+/* LINKS */
 a {
   color: #00cfff;
   text-decoration: none;
 }
 
-@media (max-width: 768px) {
-  .hero h1 {
-    font-size: 2.5rem;
-  }
-
-  #bg-video {
-    display: none;
-  }
-
-  body {
-    background: #000;
-  }
-}
-
+/* CONTACTO */
 .contact {
   text-align: center;
 }
@@ -111,66 +102,35 @@ a {
 }
 
 .contact-card {
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadeUp 0.6s ease forwards;
-}
-
-.contact-card:nth-child(1) { animation-delay: 0.1s; }
-.contact-card:nth-child(2) { animation-delay: 0.2s; }
-.contact-card:nth-child(3) { animation-delay: 0.3s; }
-.contact-card:nth-child(4) { animation-delay: 0.4s; }
-
-@keyframes fadeUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  background: rgba(0,0,0,0.85);
+  color: white;
+  padding: 20px;
+  border-radius: 14px;
+  text-decoration: none;
+  transition: 0.3s;
 }
 
 .contact-card:hover {
-  box-shadow:
-    0 0 20px rgba(0,255,255,0.6),
-    0 0 40px rgba(0,255,255,0.3);
-}
-
-.contact-card h3 {
-  margin: 0;
-  font-size: 1.1rem;
-  font-family: 'Orbitron', sans-serif;
-}
-
-.contact-card p {
-  margin: 4px 0 0;
-  font-size: 0.9rem;
-  opacity: 0.85;
+  transform: translateY(-6px);
+  box-shadow: 0 0 25px rgba(0,255,255,0.6);
 }
 
 .contact-card i {
   font-size: 2.2rem;
   color: #00ffff;
-  min-width: 40px;
 }
 
-section.contact {
-  background: transparent;      
-  backdrop-filter: none;       
-  max-width: none;              
-  margin: 80px 0;               
-  padding: 0;                   
-  border-radius: 0;
-}
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
 
-.contact-glass {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 60px 40px;
-  background: rgba(255, 255, 255, 0.12);
-  backdrop-filter: blur(12px);
-  border-radius: 24px;
-  border: 1px solid rgba(255, 255, 255, 0.25);
-}
+  #bg-video {
+    display: none;
+  }
 
-section {
-  background: rgba(255, 255, 255, 0.95);
+  body {
+    background: #000;
+  }
 }
