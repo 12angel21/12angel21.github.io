@@ -147,3 +147,9 @@ a {
   font-size: 0.9rem;
   opacity: 0.85;
 }
+
+.contact-card i {
+  font-size: 2.2rem;
+  color: #00ffff;
+  min-width: 40px;
+}
