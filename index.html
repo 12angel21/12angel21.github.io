@@ -30,7 +30,7 @@
   </div>
 
   <div class="project">
-    <h3>TFG – Aplicación móvil de detección y clasificación de tweets</h3>
+    <h3>TFG – Aplicación móvil de detección y clasificación de tweets sexistas</h3>
 
     <p>
       Desarrollo de una aplicación móvil Android capaz de detectar automáticamente
@@ -44,23 +44,25 @@
       también clasifica el tipo de sexismo: directo, reportado o juzgador.
     </p>
 
-    <a href="https://huggingface.co" target="_blank">Ver modelo en Hugging Face</a><br>
-    <a href="#">Descargar aplicación móvil</a>
+    <a href="https://huggingface.co/12angel21tfg/mT5SexDetM" target="_blank">Enlace al modelo multietiqueta</a><br>
+    <a href="https://huggingface.co/12angel21tfg/mT5SexDetB" target="_blank">Enlace al modelo binario</a><br>
+    <a href="https://12angel21tfg-mt5sexdet-api.hf.space/docs" target="_blank">Usar el modelo FastAPI</a><br>
+    <a href="https://drive.google.com/file/d/1vU3VmjvD5eqJrT4RnzF9M3GzHKl_QKVf/view">Descargar aplicación móvil</a>
 
     <div class="project-details">
       <h4>🧠 Fundamento del sistema</h4>
 
       <p>
-        La aplicación se basa en un modelo de Inteligencia Artificial entrenado durante
+        La aplicación se basa en un modelo de Inteligencia Artificial entrenado para
         el Trabajo de Fin de Grado, utilizando técnicas avanzadas de Procesamiento del
         Lenguaje Natural (PLN).
       </p>
 
       <h5>Modelo utilizado</h5>
       <ul>
-        <li><strong>Arquitectura:</strong> FLAN-T5 (modelo generativo)</li>
-        <li><strong>Tipo de tarea:</strong> Clasificación binaria (YES / NO)</li>
-        <li><strong>Idioma:</strong> Español</li>
+        <li><strong>Arquitectura:</strong> mT5 (modelo generativo)</li>
+        <li><strong>Tipo de tarea:</strong> Clasificación binaria (YES / NO) y Clasificación multiclase (Reportado, Juzgador o Directo)</li>
+        <li><strong>Idioma:</strong> Español e inglés</li>
         <li><strong>Dataset:</strong> EXIST 2025</li>
       </ul>
 
@@ -79,13 +81,20 @@
       <p class="note">
         📌 A diferencia de los clasificadores tradicionales, el modelo genera directamente
         la respuesta textual (<strong>YES</strong> o <strong>NO</strong>), lo que simplifica
-        la interpretación del resultado.
+        la interpretación del resultado. En caso de ser sexista, el modelo también proporciona una de las siguientes respuestas: <strong>DIRECTO</strong> <strong>REPORTADO</strong> o <strong>JUZGADOR</strong>.
       </p>
     </div>
   </div>
 </section>
 
 <section>
+  <p>
+    LinkedIn:
+    <a href="www.linkedin.com/in/angel-barroso-romero-b23469393" target="_blank">
+      linkedin.com/in/angel-barroso
+    </a>
+  </p>
+  
   <h2>Contacto</h2>
   <p>
     GitHub:
