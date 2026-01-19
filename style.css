@@ -22,16 +22,6 @@ body::before {
   z-index: -2;
 }
 
-.hero {
-  display: flex;
-  flex-direction: column;   
-  align-items: center;
-  justify-content: flex-start;
-  text-align: center;
-  position: relative;
-  padding-top: 120px;
-}
-
 .hero-bottom {
   width: 100%;
   max-width: 900px;
@@ -54,11 +44,15 @@ body::before {
   z-index: 0;
 }
 
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding: 0 8vw;
+}
+
 .hero-content {
-  max-width: 700px;
-  margin: 0 auto;
-  position: relative;
-  z-index: 1;
+  text-align: left;
 }
 
 .hero h1 {
