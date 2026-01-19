@@ -153,7 +153,20 @@ a {
 }
 
 section.contact {
-  background: rgba(0, 0, 0, 0.4);
-  backdrop-filter: blur(10px);
-  border-radius: 20px;
+  background: transparent;      
+  backdrop-filter: none;       
+  max-width: none;              
+  margin: 80px 0;               
+  padding: 0;                   
+  border-radius: 0;
+}
+
+.contact-glass {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 60px 40px;
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(12px);
+  border-radius: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
 }
