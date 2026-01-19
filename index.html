@@ -1,131 +1,124 @@
 <!DOCTYPE html>
 <html lang="es">
-  
-<header class="hero">
-  <div class="hero-content">
-    <h1>Ángel Barroso</h1>
-    <p>Game Developer | Computer Engineer | Unity</p>
-  </div>
-</header>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Ángel Barroso | Portfolio</title>
+
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
 <body>
 
-<video autoplay muted loop playsinline id="bg-video">
-  <source src="assets/video/background.mp4" type="video/mp4">
-</video>
-  
-<header>
-  <h1>Ángel Barroso</h1>
-  <p>Game Developer | Computer Engineering Student | Unity</p>
-</header>
+  <video autoplay muted loop playsinline id="bg-video">
+    <source src="assets/video/background.mp4" type="video/mp4">
+  </video>
 
-<section>
-  <h2>Sobre mí</h2>
-  <p>
-    Soy Ingeniero Informático y desarrollador de videojuegos en Unity, con especial
-    interés en Inteligencia Artificial y Procesamiento del Lenguaje Natural.
-  </p>
-</section>
+  <header class="hero">
+    <div class="hero-content">
+      <h1>Ángel Barroso</h1>
+      <p>Game Developer | Computer Engineer | Unity</p>
+    </div>
+  </header>
 
-<section>
-  <h2>Proyectos</h2>
-
-  <div class="project">
-    <h3>TFG – Clasificación de tweets sexistas</h3>
-    <p>Modelo FLAN-T5 entrenado en español con data augmentation.</p>
-    <a href="https://github.com/12angel21" target="_blank">Ver en GitHub</a>
-  </div>
-
-  <div class="project">
-    <h3>TFG – Aplicación móvil de detección y clasificación de tweets sexistas</h3>
-
+  <section>
+    <h2>Sobre mí</h2>
     <p>
-      Desarrollo de una aplicación móvil Android capaz de detectar automáticamente
-      contenido sexista en textos mediante un modelo de lenguaje generativo entrenado
-      específicamente para esta tarea.
+      Soy Ingeniero Informático y desarrollador de videojuegos en Unity, con especial
+      interés en Inteligencia Artificial y Procesamiento del Lenguaje Natural.
     </p>
+  </section>
 
-    <p>
-      La aplicación permite introducir un texto (por ejemplo, un tweet o comentario)
-      y obtener como resultado si el contenido es sexista o no sexista. En caso afirmativo,
-      también clasifica el tipo de sexismo: directo, reportado o juzgador.
-    </p>
+  <section>
+    <h2>Proyectos</h2>
 
-    <a href="https://huggingface.co/12angel21tfg/mT5SexDetM" target="_blank">Enlace al modelo multietiqueta</a><br>
-    <a href="https://huggingface.co/12angel21tfg/mT5SexDetB" target="_blank">Enlace al modelo binario</a><br>
-    <a href="https://12angel21tfg-mt5sexdet-api.hf.space/docs" target="_blank">Usar el modelo FastAPI</a><br>
-    <a href="https://drive.google.com/file/d/1vU3VmjvD5eqJrT4RnzF9M3GzHKl_QKVf/view">Descargar aplicación móvil</a>
+    <div class="project">
+      <h3>TFG – Clasificación de tweets sexistas</h3>
+      <p>Modelo FLAN-T5 entrenado en español con data augmentation.</p>
+      <a href="https://github.com/12angel21" target="_blank">Ver en GitHub</a>
+    </div>
 
-    <div class="project-details">
-      <h4>🧠 Fundamento del sistema</h4>
+    <div class="project">
+      <h3>TFG – Aplicación móvil de detección y clasificación de tweets sexistas</h3>
 
       <p>
-        La aplicación se basa en un modelo de Inteligencia Artificial entrenado para
-        el Trabajo de Fin de Grado, utilizando técnicas avanzadas de Procesamiento del
-        Lenguaje Natural (PLN).
+        Desarrollo de una aplicación móvil Android capaz de detectar automáticamente
+        contenido sexista en textos mediante un modelo de lenguaje generativo entrenado
+        específicamente para esta tarea.
       </p>
 
-      <h5>Modelo utilizado</h5>
-      <ul>
-        <li><strong>Arquitectura:</strong> mT5 (modelo generativo)</li>
-        <li><strong>Tipo de tarea:</strong> Clasificación binaria (YES / NO) y Clasificación multiclase (Reportado, Juzgador o Directo)</li>
-        <li><strong>Idioma:</strong> Español e inglés</li>
-        <li><strong>Dataset:</strong> EXIST 2025</li>
-      </ul>
-
-      <h5>Técnicas aplicadas</h5>
-      <ul>
-        <li>Limpieza y normalización de texto</li>
-        <li>Prompting en español</li>
-        <li>Data augmentation mediante <em>back-translation</em></li>
-      </ul>
-
-      <h5>Resultados</h5>
-      <ul>
-        <li><strong>Accuracy aproximada:</strong> 89%</li>
-      </ul>
-
-      <p class="note">
-        📌 A diferencia de los clasificadores tradicionales, el modelo genera directamente
-        la respuesta textual (<strong>YES</strong> o <strong>NO</strong>), lo que simplifica
-        la interpretación del resultado. En caso de ser sexista, el modelo también proporciona una de las siguientes respuestas: <strong>DIRECTO</strong>, <strong>REPORTADO</strong> o <strong>JUZGADOR</strong>.
+      <p>
+        La aplicación permite introducir un texto (por ejemplo, un tweet o comentario)
+        y obtener como resultado si el contenido es sexista o no sexista. En caso afirmativo,
+        también clasifica el tipo de sexismo: directo, reportado o juzgador.
       </p>
+
+      <a href="https://huggingface.co/12angel21tfg/mT5SexDetM" target="_blank">Modelo multietiqueta</a><br>
+      <a href="https://huggingface.co/12angel21tfg/mT5SexDetB" target="_blank">Modelo binario</a><br>
+      <a href="https://12angel21tfg-mt5sexdet-api.hf.space/docs" target="_blank">API FastAPI</a><br>
+      <a href="https://drive.google.com/file/d/1vU3VmjvD5eqJrT4RnzF9M3GzHKl_QKVf/view">Descargar aplicación móvil</a>
+
+      <div class="project-details">
+        <h4>🧠 Fundamento del sistema</h4>
+
+        <p>
+          La aplicación se basa en un modelo de Inteligencia Artificial entrenado para
+          el Trabajo de Fin de Grado, utilizando técnicas avanzadas de Procesamiento del
+          Lenguaje Natural (PLN).
+        </p>
+
+        <h5>Modelo utilizado</h5>
+        <ul>
+          <li><strong>Arquitectura:</strong> mT5 (modelo generativo)</li>
+          <li><strong>Tipo de tarea:</strong> Clasificación binaria y multiclase</li>
+          <li><strong>Idioma:</strong> Español e inglés</li>
+          <li><strong>Dataset:</strong> EXIST 2025</li>
+        </ul>
+
+        <h5>Técnicas aplicadas</h5>
+        <ul>
+          <li>Limpieza y normalización de texto</li>
+          <li>Prompting en español</li>
+          <li>Back-translation</li>
+        </ul>
+
+        <h5>Resultados</h5>
+        <ul>
+          <li><strong>Accuracy aproximada:</strong> 89%</li>
+        </ul>
+      </div>
     </div>
-  </div>
-</section>
-  
+  </section>
+
   <section>
-  <h2>Contacto</h2>
+    <h2>Contacto</h2>
 
-  <p>
-    LinkedIn:
-    <a href="https://www.linkedin.com/in/angel-barroso-romero-b23469393" target="_blank">
-      linkedin.com/in/angel-barroso-romero-b23469393
-    </a>
-  </p>
+    <p>
+      LinkedIn:
+      <a href="https://www.linkedin.com/in/angel-barroso-romero-b23469393" target="_blank">
+        linkedin.com/in/angel-barroso-romero-b23469393
+      </a>
+    </p>
 
-  <p>
-    GitHub:
-    <a href="https://github.com/12angel21" target="_blank">
-      github.com/12angel21
-    </a>
-  </p>
+    <p>
+      GitHub:
+      <a href="https://github.com/12angel21" target="_blank">
+        github.com/12angel21
+      </a>
+    </p>
 
-  <p>
-    Email:
-    <a href="mailto:1212angel21@gmail.com">
-      1212angel21@gmail.com
-    </a>
-  </p>
+    <p>
+      Email:
+      <a href="mailto:1212angel21@gmail.com">1212angel21@gmail.com</a>
+    </p>
 
-  <p>
-    Teléfono:
-    <a href="tel:+34693509933">
-      +34 693 50 99 33
-    </a>
-  </p>
-</section>
-
+    <p>
+      Teléfono:
+      <a href="tel:+34693509933">+34 693 50 99 33</a>
+    </p>
+  </section>
 
 </body>
 </html>
