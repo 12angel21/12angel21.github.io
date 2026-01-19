@@ -1,21 +1,76 @@
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
-  background: #f4f4f4;
-  color: #333;
+  color: #eee;
 }
 
-header {
-  background: #1e1e1e;
-  color: white;
-  padding: 40px;
+#bg-video {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -3;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: -2;
+}
+
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0,0,0,0.6),
+    rgba(0,0,0,0.85)
+  );
+  z-index: 0;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+.hero h1 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 4rem;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  text-shadow:
+    0 0 10px rgba(0, 255, 255, 0.8),
+    0 0 20px rgba(0, 255, 255, 0.5);
+}
+
+.hero p {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.2rem;
+  opacity: 0.85;
 }
 
 section {
-  max-width: 900px;
-  margin: auto;
+  background: rgba(255, 255, 255, 0.95);
+  color: #333;
+  max-width: 1000px;
+  margin: 40px auto;
   padding: 40px;
+  border-radius: 12px;
 }
 
 .project {
@@ -26,6 +81,20 @@ section {
 }
 
 a {
-  color: #0066cc;
+  color: #00cfff;
   text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  #bg-video {
+    display: none;
+  }
+
+  body {
+    background: #000;
+  }
 }
