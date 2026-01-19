@@ -156,5 +156,6 @@ section.contact {
   background: transparent;
   color: #eee;
   box-shadow: none;
-  padding: 60px 40px;
+  padding: 60px 0;
+  border-radius: 0;
 }
