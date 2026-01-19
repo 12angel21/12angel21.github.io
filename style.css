@@ -56,6 +56,8 @@ body::before {
 }
 
 .hero-content {
+  max-width: 700px;
+  margin: 0 auto;
   position: relative;
   z-index: 1;
 }
